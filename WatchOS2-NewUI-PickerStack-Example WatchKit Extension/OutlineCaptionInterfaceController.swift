@@ -1,6 +1,6 @@
 //
-//  InterfaceController.swift
-//  WatchOS2-NewUI-PickerStack-Example WatchKit Extension
+//  OutlineCaptionInterfaceController.swift
+//  WatchOS2-NewUI-PickerStack-Example
 //
 //  Created by Wlad Dicario on 24/08/2015.
 //  Copyright © 2015 Sweefties. All rights reserved.
@@ -10,10 +10,9 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
-    
+class OutlineCaptionInterfaceController: WKInterfaceController {
+
     @IBOutlet var pickerStack: WKInterfacePicker!
-    @IBOutlet var pickerListTitle: WKInterfaceLabel!
     
     var pickerItems: [WKPickerItem] = []
     var images = [String]()
@@ -24,7 +23,6 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         appendData()
         setDataList()
-        
     }
     
     override func willActivate() {
@@ -40,28 +38,31 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func pickerSelected(value: Int) {
         let selectedItem = self.pickerItems[value]
-        self.pickerListTitle.setText(selectedItem.title!)
+        print(selectedItem.title!)
     }
 }
 
-//MARK: Interface Controller Extension
-extension InterfaceController {
+//MARK: Outline Caption Interface Controller Extension
+extension OutlineCaptionInterfaceController {
     
     // set Data List for Picker Stack.
     func setDataList() {
         for i in 0...15 {
             let item = WKPickerItem()
             item.title = "\(object[i])"
+            // to show caption in outline
+            item.caption = "\(object[i])"
+            // to show stack content image
             item.contentImage = WKImage(imageName: "\(images[i])")
             pickerItems.append(item)
         }
         self.pickerStack.setItems(pickerItems)
     }
     
-    // init selected Item Label.
+    // init selected Item.
     func initSelectedItemLbl() {
         let selectedItem = self.pickerItems[0]
-        self.pickerListTitle.setText(selectedItem.title!)
+        print(selectedItem.title!)
     }
     
     // append object/images list strings.
@@ -70,4 +71,3 @@ extension InterfaceController {
         self.images = ["elcapitanlogo", "IOS_9_Logo", "watch-os-2", "swift", "multitasking", "spotlight-ios", "gameplaykit", "replaykit", "model-io", "app-thinning", "cloudkit", "homekit", "playgrounds", "healthkit", "watchkit", "maps_ios"]
     }
 }
-

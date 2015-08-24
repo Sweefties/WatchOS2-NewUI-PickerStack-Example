@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E7654791B8BAF820059AE6D /* OutlineCaptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7654781B8BAF820059AE6D /* OutlineCaptionInterfaceController.swift */; };
 		7E91B4A21B8B84E000C0931B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91B4A11B8B84E000C0931B /* AppDelegate.swift */; };
 		7E91B4A41B8B84E000C0931B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E91B4A31B8B84E000C0931B /* ViewController.swift */; };
 		7E91B4A71B8B84E000C0931B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E91B4A51B8B84E000C0931B /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E7654781B8BAF820059AE6D /* OutlineCaptionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlineCaptionInterfaceController.swift; sourceTree = "<group>"; };
 		7E91B49E1B8B84E000C0931B /* WatchOS2-NewUI-PickerStack-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchOS2-NewUI-PickerStack-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E91B4A11B8B84E000C0931B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E91B4A31B8B84E000C0931B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				7E91B4C41B8B84E000C0931B /* InterfaceController.swift */,
+				7E7654781B8BAF820059AE6D /* OutlineCaptionInterfaceController.swift */,
 				7E91B4C61B8B84E000C0931B /* ExtensionDelegate.swift */,
 				7E91B4C81B8B84E000C0931B /* Assets.xcassets */,
 				7E91B4CA1B8B84E000C0931B /* Info.plist */,
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E7654791B8BAF820059AE6D /* OutlineCaptionInterfaceController.swift in Sources */,
 				7E91B4C71B8B84E000C0931B /* ExtensionDelegate.swift in Sources */,
 				7E91B4C51B8B84E000C0931B /* InterfaceController.swift in Sources */,
 			);
@@ -526,6 +530,7 @@
 				7E91B4CF1B8B84E000C0931B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E91B4D11B8B84E000C0931B /* Build configuration list for PBXNativeTarget "WatchOS2-NewUI-PickerStack-Example WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +539,7 @@
 				7E91B4D31B8B84E000C0931B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E91B4D51B8B84E000C0931B /* Build configuration list for PBXNativeTarget "WatchOS2-NewUI-PickerStack-Example" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +548,7 @@
 				7E91B4D71B8B84E000C0931B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
