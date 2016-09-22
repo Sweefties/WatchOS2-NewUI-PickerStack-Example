@@ -19,8 +19,8 @@ class InterfaceController: WKInterfaceController {
     var images = [String]()
     var object = [String]()
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         // Configure interface objects here.
         appendData()
         setDataList()
@@ -38,7 +38,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
-    @IBAction func pickerSelected(value: Int) {
+    @IBAction func pickerSelected(_ value: Int) {
         let selectedItem = self.pickerItems[value]
         self.pickerListTitle.setText(selectedItem.title!)
     }
