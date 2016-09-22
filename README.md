@@ -17,6 +17,10 @@ WatchOS 2 Experiments - New UI Components - Picker Stack
 
 Tested on WatchOS2 Simulator.
 
+## Important
+
+Get the `master` branch for XCode 8 / Swift 3 updated project.
+
 ## Usage
 
 To run the example project, clone the repo.
@@ -26,7 +30,7 @@ To run the example project, clone the repo.
 Configure your Storyboard :
   - Picker attributes inspector
   - set 'Style' attribute to 'Stack'
-  
+
 ```swift
 for i in 0...15 {
     let item = WKPickerItem()
@@ -36,6 +40,3 @@ for i in 0...15 {
   }
 self.pickerStack.setItems(pickerItems)
 ```
-
-
-
